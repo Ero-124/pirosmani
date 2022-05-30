@@ -1,0 +1,234 @@
+.footer {
+	background: #00AC4E;
+	padding: 34px 0;
+	color: #FFFFFF;
+
+	a {
+		color: #FFFFFF;
+	}
+
+	.footer-wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		.footer-left {
+			.phones {
+				display: flex;
+				justify-content: space-between;
+
+				.phone-item {
+					display: flex;
+					flex-direction: column;
+					margin-right: 60px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+					span {
+						font-weight: 400;
+						font-size: 12.3407px;
+						line-height: 32px;
+
+					}
+
+					a {
+						font-weight: 500;
+						font-size: 18.511px;
+						line-height: 39px;
+					}
+				}
+			}
+
+			.work-time {
+				font-weight: 400;
+				font-size: 15.4259px;
+				line-height: 32px;
+				margin: 10px 0;
+			}
+
+			.work-email {
+				font-weight: 400;
+				font-size: 18.511px;
+				line-height: 32px;
+				display: flex;
+				flex-direction: column;
+
+				.site-help {
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 22px;
+					text-decoration-line: underline;
+					margin: 14px 0 10px 0;
+				}
+			}
+		}
+
+		.footer-center {
+			.social {
+				display: flex;
+				flex-direction: column;
+
+				a {
+					font-weight: 500;
+					font-size: 15.4259px;
+					line-height: 32px;
+					letter-spacing: 3.08517px;
+					font-variant: small-caps;
+					text-transform: uppercase;
+					margin-bottom: 25px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.footer-right {
+			.person {
+				a {
+					display: flex;
+					align-items: center;
+
+					img {
+						margin-right: 7px;
+					}
+
+					span {
+						font-weight: 500;
+						font-size: 15.4259px;
+						line-height: 32px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-bottom {
+		font-family: 'TT Hoves';
+		font-weight: 400;
+		font-size: 12.3407px;
+		line-height: 32px;
+
+		.footer-link {
+			margin-left: 33px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.footer {
+		padding: 25px 0 80px 0;
+
+		.footer-wrapper {
+			flex-direction: column;
+			justify-content: flex-start !important;
+
+			.footer-left {
+				display: flex;
+				justify-content: space-between;
+
+				> div {
+					width: 48%;
+					justify-content: start;
+				}
+				.phones {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					.phone-item {
+						margin-right: 0;
+						margin-bottom: 10px;
+						span {
+							font-size: 8px !important;
+							line-height: 21px !important;
+						}
+
+						a {
+							font-size: 12px !important;
+							line-height: 25px !important;
+						}
+					}
+				}
+			}
+
+
+				.time-email {
+					display: flex;
+					flex-direction: column-reverse;
+					.work-time {
+						font-size: 10px !important;
+						line-height: 21px !important;
+					}
+
+					.work-email {
+						font-size: 12px !important;
+						line-height: 21px !important;
+
+						a.site-help {
+							display: none;
+						}
+					}
+				}
+
+
+
+			.footer-center {
+				margin-top: 20px;
+				.social {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					a {
+						font-size: 10px !important;
+						line-height: 21px !important;
+						margin-bottom: 12px;
+					}
+				}
+			}
+
+			.footer-right {
+				margin-bottom: 12px;
+				.person {
+					a {
+						img {
+							width: 16px;
+							height: 16px;
+						}
+
+						span {
+							font-size: 10px !important;
+							line-height: 21px !important;
+						}
+					}
+				}
+			}
+		}
+
+		.footer-bottom {
+			font-size: 8px !important;
+			line-height: 21px !important;
+			a {
+				margin-left: 22px !important;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.footer .footer-wrapper .footer-left .phones .phone-item {
+		margin-right: 36px;
+	}
+	.footer .footer-wrapper .footer-left .phones .phone-item a {
+		font-size: 13px;
+		line-height: 28px;
+	}
+	.footer .footer-wrapper .footer-center .social a {
+		font-size: 12.4259px;
+		line-height: 33px;
+	}
+	.footer .footer-wrapper .footer-left .work-time {
+		font-size: 13.4259px;
+	}
+}
