@@ -1,0 +1,382 @@
+.modal-dialog {
+	max-width: 394px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 17.7465px rgba(0, 0, 0, 0.12);
+	border-radius: 17.4636px;
+
+	&.modal-big {
+		max-width: 654px;
+		width: 654px;
+
+		.modal-content {
+			padding: 40px 56px 27px;
+
+			.booking-top {
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 18px;
+				text-align: center;
+				color: #000000;
+				margin-bottom: 3px;
+			}
+
+			.form {
+				.inpb {
+					&.d-flex {
+						input {
+							width: 253px;
+						}
+					}
+
+					input {
+						padding-left: 17px;
+						font-size: 14px;
+						color: #000;
+					}
+				}
+
+				button {
+					height: 52px;
+					line-height: 52px;
+					font-size: 17px;
+				}
+			}
+		}
+	}
+
+	.modal-content {
+		border: none;
+		padding: 30px 42px 34px;
+		position: relative;
+
+		.modal-body {
+			padding: 0;
+
+			.rev-top {
+				font-size: 20.0411px;
+				line-height: 29px;
+				color: #000000;
+				margin-bottom: 16px;
+			}
+		}
+
+		.btn-close {
+			background: url(../img/x-green.svg) !important;
+			opacity: 1;
+			box-shadow: none;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+		}
+
+		.top-modal {
+			text-align: center;
+			margin-bottom: 10px;
+
+			.modal-name {
+				font-weight: 500;
+				font-size: 17.4636px;
+				line-height: 22px;
+				color: #000000;
+				margin-top: 13px;
+			}
+		}
+
+		.form {
+			.send-check {
+				text-align: center;
+
+				&.active {
+					button {
+						background: #00AC4E;
+					}
+
+					span {
+						color: #00AC4E;
+					}
+
+					b {
+						display: none;
+					}
+				}
+
+
+				span {
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 18px;
+					text-align: center;
+					text-decoration-line: underline;
+					color: #E0E0E0;
+					cursor: pointer;
+				}
+
+				b {
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 18px;
+					text-align: center;
+					color: #000000;
+					margin-left: 10px;
+				}
+
+				button {
+					margin-top: 30px !important;
+					background: #E0E0E0;
+				}
+			}
+
+			.line-rev {
+				display: flex;
+				align-items: center;
+
+				&:last-of-type {
+					align-items: flex-start !important;
+				}
+
+				b {
+					font-size: 10px;
+					line-height: 12px;
+					color: #000000;
+					min-width: 80px;
+				}
+
+				input {
+					width: 177px !important;
+					height: 33px !important;
+					line-height: 33px !important;
+					padding-left: 17px !important;
+				}
+
+				textarea {
+					width: 244.5px;
+					height: 98.49px;
+					padding-left: 17px;
+					border: 1px solid #EBEBEB;
+				}
+
+				.rating {
+					span {
+						background: url(../img/star-trans.svg);
+						width: 13px;
+						height: 13px;
+						display: inline-block;
+
+						&.active {
+							background: url(../img/star.svg);
+						}
+					}
+				}
+			}
+
+			.inpb {
+				input {
+					width: 100%;
+					height: 50px;
+					background: #FCFCFC;
+					border: 1px solid #EBEBEB;
+					border-radius: 6px;
+					box-sizing: border-box;
+					padding: 0 20px 0 49px;
+					font-size: 12.2245px;
+					line-height: 50px;
+					text-align: left;
+					color: #C6C6C6;
+					margin: 14px 0;
+					background-repeat: no-repeat !important;
+					background-position: 18px center !important;
+
+					&.phone {
+						background: url(../img/phone-modal.svg);
+					}
+
+					&.pass {
+						background: url(../img/pass.svg);
+					}
+
+					&.email {
+						background: url(../img/icon-mail-small.svg);
+					}
+				}
+
+				&.digit {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 200px;
+					margin: 0 auto;
+
+					input {
+						width: 33px;
+						height: 47px;
+						background: #FCFCFC;
+						border: 1px solid #EBEBEB;
+						border-radius: 5px;
+						font-weight: 500;
+						font-size: 24px;
+						line-height: 16px;
+						text-align: center;
+						color: #000000;
+						padding: 0;
+					}
+
+					span {
+						width: 7px;
+						height: 1px;
+						background: #343E48;
+						margin: 0 6px;
+					}
+				}
+			}
+
+			.btn-block-2 {
+				display: flex;
+				justify-content: center;
+				.decline {
+					background: transparent;
+					color: #00AC4E;
+				}
+			}
+
+
+
+			.error-txt {
+				font-size: 10px;
+				line-height: 14px;
+				text-align: center;
+				color: #EB5757;
+				margin-bottom: 13px;
+			}
+
+			.checkbox-block {
+				margin-bottom: 39px;
+
+				.line {
+					display: flex;
+					font-size: 11px;
+					line-height: 14px;
+					color: #C6C6C6;
+					margin-bottom: 14px;
+
+
+					input {
+						position: relative;
+						display: none;
+
+						&:checked {
+							~label {
+								&::before {
+									background: #00AC4E;
+									border: 2px solid #EBEBEB;
+								}
+							}
+						}
+
+						~label {
+							position: relative;
+							margin-left: 30px;
+
+							&::before {
+								content: "";
+								width: 15px;
+								height: 15px;
+								background: #FCFCFC;
+								border: 2px solid #EBEBEB;
+								border-radius: 50%;
+								box-sizing: border-box;
+								position: absolute;
+								top: 0;
+								left: -30px;
+							}
+
+							a {
+								color: #00AC4E;
+							}
+						}
+					}
+				}
+			}
+
+
+			.forgot-pass {
+				font-size: 14.1972px;
+				line-height: 17px;
+				text-decoration-line: underline;
+				color: #00AC4E;
+				text-align: center;
+				cursor: pointer;
+			}
+
+			button {
+				padding: 0 20px;
+				min-width: 143px;
+				box-sizing: border-box;
+				height: 45px;
+				background: #00AC4E;
+				border-radius: 6px;
+				font-weight: 500;
+				font-size: 14.1972px;
+				line-height: 45px;
+				text-align: center;
+				color: #FFFFFF;
+				display: block;
+				margin: 12px auto;
+			}
+
+			.modal-txt {
+				font-size: 12.2245px;
+				line-height: 18px;
+				text-align: center;
+				color: #000000;
+				margin-top: 12px;
+
+				span {
+					color: #00AC4E;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.modal-dialog {
+		&.modal-big {
+			max-width: 310px;
+			width: 310px;
+			margin: 10px auto;
+
+			.modal-content {
+				padding: 15px;
+
+				.booking-top {
+					font-size: 17px;
+					line-height: 20px;
+				}
+
+				.form {
+					.inpb {
+						&.d-flex {
+							flex-direction: column;
+							input {
+								width: 100%;
+							}
+						}
+
+						input {
+							padding-left: 17px;
+							font-size: 14px;
+						}
+					}
+
+					button {
+						height: 40px;
+						line-height: 40px;
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+
